@@ -13,7 +13,7 @@ public class McDonald {
 			Food food = foods.get(i);
 			System.out.println(food.getNumber() + ")\t" + food.getName());
 		}
-		System.out.println("0)\t結算");
+		System.out.println("8)\t結算");
 		System.out.println("請輸入餐點:");
 		Scanner scanner = new Scanner(System.in);
 		int n = -1;
@@ -74,6 +74,12 @@ public class McDonald {
 				System.out.println("目前餐點:");
 				Food food7 = foods.get(n - 1);
 				System.out.println(food7.getNumber() + ".\t" + food7.getName() + "\t" + n7 + "\t份");
+				System.out.println("=================");
+				break;
+			case 8:
+				System.out.println("所有餐點:");
+				Food food8 = foods.get(n - 1);
+				System.out.println(food8.getNumber() + ".\t" + food8.getName());
 				System.out.println("=================");
 				break;
 			default:
